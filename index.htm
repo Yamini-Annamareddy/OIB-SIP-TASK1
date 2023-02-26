@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website using HTML CSS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <div class="logo">Fly High</div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <button class="btn btn-search">Search</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="left">
+          <div class="box">
+            <div class="txt-bigger">Reach</div>
+            <div class="txt-bigger" style="color: hsla(120, 20%, 96%, 0.89)">your</div>
+            <div class="txt-bigger">Destination</div>
+            <hr />
+            <div>
+                All journeys have secret destinations of which the traveler is unaware
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="box">
+            <form class="form-login">
+              <div>
+                <input
+                  type="text"
+                  placeholder="User Name"
+                  required
+                  minlength="4"
+                />
+              </div>
+              <div>
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div>
+                <button class="btn btn-login">Login</button>
+              </div>
+            </form>
+            <div>Don't have an account ?</div>
+            <div>
+              <a href="#signup">Sign up</a> 
+              <div class="mt-10">Forget password?</div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="bg-select">
+        <div onclick="changeBgImage('default')" class="bg-option bg-gray"></div>
+        <div
+          onclick="changeBgImage('green1')"
+          class="bg-option bg-green1"
+        ></div>
+        <div
+          onclick="changeBgImage('green2')"
+          class="bg-option bg-green2"
+        ></div>
+      </div>
+    </main>
+    <script>
+      
+      function changeBgImage(selectedColor) {
+        document.body.style.background = imageUlrs[selectedColor];
+        document.body.style.backgroundSize = "cover";
+      }
+    </script>
+  </body>
+</html>
